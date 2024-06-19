@@ -11,14 +11,10 @@
 </head>
 <body>
     <div id="app">
-        <!-- ヘッダー -->
         <div id="navbar-container"></div>
-        <!-- メインコンテンツ -->
         <div class="content">
-            <!-- サイドバー -->
             <div id="sidebar-container"></div>
 
-            <!-- メインエリア -->
             <div class="main">
                 <!-- ホーム画面 -->
                 <div class="jumbotron text-center">
@@ -27,6 +23,9 @@
                     <hr class="my-4">
                     <p>詳細情報はこちらからご覧ください。</p>
                     <a class="btn btn-primary btn-lg" href="#" role="button">詳細を見る</a>
+                </div> 
+                <!-- <div id="content-container"> -->
+
                 </div>
             </div>
         </div>
@@ -37,6 +36,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./src/components/navbar.js"></script>
     <script src="./src/components/sidebar.js"></script>
+    <!-- <script src="./src/pages/education.js"></script> -->
     <script>
         new Vue({
             el: '#app',
