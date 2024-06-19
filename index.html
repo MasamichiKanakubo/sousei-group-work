@@ -12,39 +12,11 @@
 <body>
     <div id="app">
         <!-- ヘッダー -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html" ><img src="https://www.ritsumei.ac.jp/features/r_na_hito/images/logo_footer.png" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">ホーム <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/introduction.html">技術者向けページ</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+        <div id="navbar-container"></div>
         <!-- メインコンテンツ -->
         <div class="content">
             <!-- サイドバー -->
-            <div class="sidebar bg-light">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./html/takao/takao.html">医療分野</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/naoki/naoki.html">教育分野</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/iwata/iwata.html">防災分野</a>
-                    </li>
-                </ul>
-            </div>
+            <div id="sidebar-container"></div>
 
             <!-- メインエリア -->
             <div class="main">
@@ -63,6 +35,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./src/components/navbar.js"></script>
+    <script src="./src/components/sidebar.js"></script>
     <script>
         new Vue({
             el: '#app',
