@@ -22,7 +22,11 @@ body {
 .main {
   flex: 1;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #F9F9FA;
+}
+
+.jumbotron {
+  background-color: #fff;
 }
 
 .navbar {
@@ -39,4 +43,30 @@ body {
   background-color:#fff  !important; /* bg-light */
   padding: 10px;
   /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+}
+
+/* Github Jump Button */
+.github-button {
+  margin-left: auto;
+  /* Move the GitHub button to the right end */
+}
+.github-button a {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.github-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.btn {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.06);
 }

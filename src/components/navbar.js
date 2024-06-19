@@ -1,5 +1,3 @@
-// ヘッダーを生成する関数
-
 function createNavbar() {
     const nav = document.createElement('nav');
     nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
@@ -35,7 +33,7 @@ function createNavbar() {
     div.id = 'navbarNav';
 
     const ul = document.createElement('ul');
-    ul.className = 'navbar-nav';
+    ul.className = 'navbar-nav mr-auto'; // Add this class for alignment
 
     const li1 = document.createElement('li');
     li1.className = 'nav-item active';
@@ -57,6 +55,24 @@ function createNavbar() {
     ul.appendChild(li2);
 
     div.appendChild(ul);
+
+    // Create GitHub button
+    const githubButton = document.createElement('a');
+    githubButton.href = 'https://github.com/MasamichiKanakubo/sousei-group-work';
+    githubButton.target = '_blank';
+    githubButton.className = 'btn btn-white ml-auto'; // Bootstrap classes for styling
+
+    const githubLogo = document.createElement('img');
+    githubLogo.src = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png';
+    githubLogo.alt = 'GitHub Logo';
+    githubLogo.style.width = '20px';
+    githubLogo.style.height = '20px';
+    githubLogo.style.marginRight = '5px';
+
+    githubButton.appendChild(githubLogo);
+    githubButton.appendChild(document.createTextNode('GitHub'));
+
+    div.appendChild(githubButton);
     nav.appendChild(div);
 
     return nav;
